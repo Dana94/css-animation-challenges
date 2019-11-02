@@ -1,4 +1,4 @@
-# practice-01-menu
+# css-animation-challenges
 
 ## Project setup
 ```

@@ -1,14 +1,8 @@
 <template>
   <div class="frame">
     <div class="container">
-      <div class="square square-1">
-        <!-- <div class="side1"></div>
-        <div class="side2"></div> -->
-      </div>
-      <div class="square square-2">
-        <div class="side1"></div>
-        <div class="side2"></div>
-      </div>
+      <div class="square square-1"></div>
+      <div class="square square-2"></div>
     </div>
   </div>
 </template>
@@ -51,109 +45,71 @@ export default {
   position: absolute;
   left: 0;
   top: 0;
-  animation: 0.7s linear 0s infinite alternate square1;
-  display: flex;
-
-  .side1 {
-    width: 50%;
-    animation: 0.7s linear 0s infinite alternate square1side1;
-  }
-  .side2 {
-    width: 50%;
-    animation: 0.7s linear 0s infinite alternate square1side2;
-  }
+  background-color: #ffffff;
+  animation: 4s linear 0s infinite square1;
 }
 
 .square-2 {
   position: absolute;
   right: 0;
   bottom: 0;
-  animation: square2 0.7s alternate;
-  display: flex;
-
-  .side1 {
-    width: 50%;
-    animation: square2side1 0.5s alternate;
-  }
-
-  .side2 {
-    width: 50%;
-    animation: square2side2 0.5s alternate;
-  }
+  background-color: #ffffff;
+  animation: 4s linear 0s infinite square2;
 }
 
 @keyframes square1 {
   0% {
-    left: 0px;
-    background: linear-gradient(90deg, #ffffff, #5c5c5c);
-
+    left: 0;
+    top: 0;
+    background-color: #ffffff;
+  }
+  25% {
+    left: 100px;
+    top: 0;
+    background-color: #000000;
   }
   50% {
-    left: 50px;
-    background: linear-gradient(90deg, #ffffff, #5c5c5c,#000000);
-
-  }
-  100% {
     left: 100px;
-    background-color: #000000;
-
-  }
-}
-
-@keyframes square1side1 {
-  0% {
+    top: 100px;
     background-color: #ffffff;
   }
-  // 50% {
-  //   background-color: linear-gradient(90deg, #ffffff, #000000);
-  // }
-  100% {
+  75% {
+    left: 0px;
+    top: 100px;
     background-color: #000000;
   }
-}
-
-@keyframes square1side2 {
-  0% {
+  100% {
+    left: 0;
+    top: 0;
     background-color: #ffffff;
-  }
-  // 50% {
-  //   background-color: linear-gradient(90deg, #ffffff, #000000);
-  // }
-  100% {
-    background-color: #000000;
   }
 }
 
 @keyframes square2 {
   0% {
-    right: 0px;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
   }
-  50% {
-    right: 50px;
-  }
-  100% {
+  25% {
     right: 100px;
-  }
-}
-
-@keyframes square2side1 {
-  0% {
-    background-color: #ffffff;
-  }
-  100% {
+    bottom: 0;
     background-color: #000000;
-  }
-}
-
-@keyframes square2side2 {
-  0% {
-    background-color: #ffffff;
   }
   50% {
+    right: 100px;
+    bottom: 100px;
     background-color: #ffffff;
   }
-  100% {
+  75% {
+    right: 0;
+    bottom: 100px;
     background-color: #000000;
+  }
+  100% {
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
   }
 }
 </style>

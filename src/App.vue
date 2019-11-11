@@ -1,15 +1,18 @@
 <template>
   <div id="app">
-    <MenuButton/>
+    <ColorChangeSquares/>
   </div>
 </template>
 
 <script>
-import MenuButton from './components/MenuButton.vue'
+// import MenuButton from './components/MenuButton.vue'
+import ColorChangeSquares from './components/ColorChangeSquares.vue'
+
 export default {
   name: 'app',
   components: {
-    MenuButton
+    // MenuButton,
+    ColorChangeSquares
   }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="frame">
+  <div class="frame container">
     <div class="center">
       <div class="menu-icon" @click="start" :class="{'active': activeClass}">
         <div class="line-1 line" :class="{'no-animation': noAnimationClass}"></div>
@@ -30,15 +30,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.frame {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  height: 400px;
-  margin-top: -200px;
-  margin-left: -200px;
-  border-radius: 2px;
+@import '../assets/styles.scss';
+
+.container {
   box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
   background: #e91e63;
   color: #fff;

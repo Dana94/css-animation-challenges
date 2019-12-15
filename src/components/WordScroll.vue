@@ -9,7 +9,7 @@
           <b :class="{'is-visible': word === 2, 'is-hidden': word !== 2}">Smart</b>
           <b :class="{'is-visible': word === 3, 'is-hidden': word !== 3}">Determined</b>
           <b :class="{'is-visible': word === 4, 'is-hidden': word !== 4}">Brave</b>
-          <b :class="{'is-visible': word === 5, 'is-hidden': word !== 5}">Georgeous</b>
+          <b :class="{'is-visible': word === 5, 'is-hidden': word !== 5}">Gorgeous</b>
         </span>
       </h1>
     </div>

@@ -1,4 +1,6 @@
-# css-animation-challenges
+# css-animation-challenges [![Netlify Status](https://api.netlify.com/api/v1/badges/1b06efc9-c03c-4cfd-917e-798f812b19e4/deploy-status)](https://app.netlify.com/sites/practical-volhard-9d4799/deploys)
+
+Live: https://practical-volhard-9d4799.netlify.com/
 
 ## Project setup
 ```
